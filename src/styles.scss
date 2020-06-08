@@ -1,0 +1,295 @@
+/* You can add global styles to this file, and also import other style files */
+
+.app {
+  background: #e5e5e5;
+}
+.container {
+  height: 105vh;
+  width: 414px;
+  background: #fff;
+}
+.navigation {
+  .close {
+    background: #5e5cd9;
+    border-radius: 36px;
+    color: white;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    width: 80px;
+    height: 32px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    margin-top: 16px;
+    opacity: unset;
+  }
+}
+
+.app-info {
+  margin-top: 16px;
+  .info {
+    width: 414px;
+    .app-logo {
+      margin: auto;
+      background: #5e5cd9;
+      border-radius: 50%;
+      width: 128px;
+      height: 128px;
+      padding: 40px;
+
+      .img {
+        margin: auto;
+      }
+    }
+    .app-name {
+      margin: auto;
+      margin-top: 16px;
+      color: #5e5cd9;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      width: 233px;
+    }
+    .app-motto {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      color: #828282;
+      width: 215px;
+      margin: auto;
+    }
+  }
+}
+
+.rank-stepper {
+  width: 95%;
+  margin: auto;
+  margin-top: 32px;
+
+  .col-xs-4 {
+    width: 33.3%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .shield-bg {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #5e5cd9;
+      margin-top: 16px;
+
+      img {
+        position: relative;
+        top: 10px;
+        left: 16px;
+      }
+    }
+
+    &:nth-child(1) .rank {
+      color: #000;
+    }
+
+    &:nth-child(3) .rank {
+      color: #828282;
+    }
+
+    &:nth-child(2) .shield-bg {
+      background: #fff;
+      position: relative;
+      top: 36px;
+      left: 28px;
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      position: relative;
+      left: 53px;
+      .shield-bg {
+        background: #bdbdbd;
+      }
+    }
+    .rank-label {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #000000;
+    }
+    .rank {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000;
+      margin-top: 8px;
+    }
+  }
+  .goal {
+    width: 324px;
+    height: 14px;
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .step-line {
+    width: 240px;
+    outline: 2px dashed #bab1b1;
+    position: relative;
+    bottom: 54px;
+    margin: auto;
+    z-index: 1;
+  }
+}
+
+.help-section {
+  .col-xs-6 {
+    margin: auto;
+    margin-top: 32px;
+
+    span {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #000000;
+    }
+  }
+  label {
+    width: 145px;
+    height: 14px;
+  }
+  .row {
+    .train-model {
+      width: 56px;
+      height: 56px;
+      background: #eb5757;
+      border-radius: 8px;
+
+      img {
+        width: 33.75px;
+        height: 18px;
+        position: relative;
+        top: 25%;
+        left: 20%;
+      }
+    }
+
+    .model-text {
+      width: 59px;
+      height: 28px;
+      text-align: center;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #000000;
+    }
+    .col-xs-6 {
+      &:nth-child(2) {
+        .train-model {
+          img {
+            width: 33.75px;
+            height: 24px;
+            position: relative;
+            top: 25%;
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.start-play-btn {
+  background: #5e5cd9;
+  border-radius: 36px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  width: 296px;
+  height: 64px;
+  margin-top: 32px;
+
+  .text {
+    width: 225px;
+    height: 12px;
+    text-align: center;
+  }
+  .icon {
+    margin-left: -10px;
+    img {
+      &:nth-child(1) {
+        z-index: 11;
+      }
+      &:nth-child(2) {
+        z-index: 12;
+        position: relative;
+        right: 25px;
+      }
+      &:nth-child(3) {
+        z-index: 13;
+        position: relative;
+        right: 32px;
+      }
+    }
+  }
+}
+
+.how-to-play-btn {
+  margin-top: 16px;
+  width: 160px;
+  height: 32px;
+  border: 1px solid #5e5cd9;
+  box-sizing: border-box;
+  border-radius: 36px;
+  color: #5e5cd9;
+
+  img {
+    width: 21px;
+    height: 21px;
+    margin-left: 6.5px;
+  }
+  span {
+    width: 100px;
+    height: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+}
+
+.mg-auto {
+  margin: auto;
+}
